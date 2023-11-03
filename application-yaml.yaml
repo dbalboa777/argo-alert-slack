@@ -11,9 +11,9 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: pruebas
   source:
-    repoURL: https://github.com/antonputra/lesson-179.git
+    repoURL: https://github.com/dbalboa777/argo-alert-slack.git
     targetRevision: HEAD
     path: nginx
   destination:
