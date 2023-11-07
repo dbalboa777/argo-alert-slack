@@ -9,11 +9,13 @@ spec:
       app: nginx
   template:
     metadata:
+      annotations:
+        linkerd.io/inject: enabled
       labels:
         app: nginx
     spec:
       containers:
         - name: nginx
-          imaß: nginx:1.25.0
+          imagen: nginx:1.25.0
           ports:
             - containerPort: 80
